@@ -1,15 +1,23 @@
 import React from "react";
 import '../style/home.css';
 import logo from '../assets/shared/logo.svg';
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+    const navigator = useNavigate();
+
+    const handButton = (e) => {
+        e.preventDefault();
+        navigator('./moon');
+    }
+
     return (
         <div className="contain">
             <div className="wrapper">
                 <img src={logo} alt="logo" className="logo"/>
                 <span className="grayLine"></span>
                 <div className="bar">
-                    <div className="box"><span className="number">00</span> HOME</div>
+                    <div className="box1"><span className="number">00</span> HOME</div>
                     <div className="box"><span className="number">01</span> DESTINATION</div>
                     <div className="box"><span className="number">02</span> CREW</div>
                     <div className="box"><span className="number">03</span> TECHNOLOGY</div>
@@ -27,7 +35,7 @@ const Home = () => {
                         world experience!</div>
                 </div>
                 <div className="right">
-                    <div className="outerCircle">
+                    <div className="outerCircle" onClick={handButton}>
                         <div className="innerCircle">EXPLORE</div>
                     </div>
                 </div>

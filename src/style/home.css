@@ -44,7 +44,7 @@
 }
 
 .box {
-    width: 10%;
+    width: 7%;
     height: 100%;
     font-family: Barlow Condensed;
     font-style: normal;
@@ -52,8 +52,22 @@
     font-size: 20px;
     color: #ffffff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+.box1 {
+    width: 7%;
+    height: 97%;
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #ffffff;
 }
 
 .number {
