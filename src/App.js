@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { Home } from './components';
 import { Moon } from './components';
-import data from './data.json';
+import { Mars } from './components';
+import { Europa } from './components';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/moon' element={<Moon/>} />
+        <Route path='/mars' element={<Mars/>} />
+        <Route path='/europa' element={<Europa/>} />
       </Routes>
     </Router>
   );

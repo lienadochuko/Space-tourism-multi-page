@@ -6,9 +6,14 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
     const navigator = useNavigate();
 
-    const handButton = (e) => {
+    const handButtonMoon = (e) => {
         e.preventDefault();
         navigator('./moon');
+    }
+
+    const handButtonMars = (e) => {
+        e.preventDefault();
+        navigator('./mars');
     }
 
     return (
@@ -17,9 +22,9 @@ const Home = () => {
                 <img src={logo} alt="logo" className="logo"/>
                 <span className="grayLine"></span>
                 <div className="bar">
-                    <div className="box1"><span className="number">00</span> HOME</div>
-                    <div className="box"><span className="number">01</span> DESTINATION</div>
-                    <div className="box"><span className="number">02</span> CREW</div>
+                    <div className="box01"><span className="number">00</span> HOME</div>
+                    <div className="box" onClick={handButtonMoon}><span className="number">01</span> DESTINATION</div>
+                    <div className="box" onClick={handButtonMars}><span className="number">02</span> CREW</div>
                     <div className="box"><span className="number">03</span> TECHNOLOGY</div>
                 </div>
             </div>
@@ -35,7 +40,7 @@ const Home = () => {
                         world experience!</div>
                 </div>
                 <div className="right">
-                    <div className="outerCircle" onClick={handButton}>
+                    <div className="outerCircle" onClick={handButtonMoon}>
                         <div className="innerCircle">EXPLORE</div>
                     </div>
                 </div>

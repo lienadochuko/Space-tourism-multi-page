@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Roboto:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Bellefair&family=Roboto:wght@500;700&display=swap');
-.contain {
+
+.contain1 {
     width: 100%;
     height: 100vh;
     /* display: flex; */
     /* justify-content: center; */
-    background-image: url('../assets/home/background-home-desktop.jpg');
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -18,51 +19,19 @@
     margin-left: 5%;
     align-items: center;
     justify-content: space-between;
-    /* background-color: aqua; */
 }
 
-/* img{    
-    
-} */
-
-.grayLine {
-    width: 35%;
-    height: 0%;
-    position: absolute;
-    border-bottom: 1px solid gray;
-    margin-left: 9%;
-    z-index: 1099;
-}
-
-.bar {
-    width: 55%;
-    height: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #9797972c;
-    backdrop-filter: blur(40.774227142333984px);
-}
-
-.box {
-    width: fit-content;
+.Moonleft {
+    width: 60%;
     height: 100%;
-    font-family: Barlow Condensed;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 20px;
-    color: #ffffff;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    cursor: pointer;
+    justify-content: space-evenly;
 }
 
-.box:hover {    
-    border-bottom: 3px solid #ffffff73;
-}
-
-.box01 {
-    width: 7%;
+.box1 {
+    width: 12%;
     height: 97%;
     font-family: Barlow Condensed;
     font-style: normal;
@@ -76,108 +45,139 @@
     cursor: pointer;
 }
 
-.number {
-    margin-right: 8%;
-    display: flex;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 2.7px;
-}
-
-.bottomWrapper {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left {
-    width: 50%;
-    height: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    /* background-color: #ffffff; */
-
-}
-
-.item1 {
-    width: 47%;
-    color: #D0D6F9;
+.itemInstruction {
+    color: #FFF;
     font-family: Barlow Condensed;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 4.725px;
+    text-transform: uppercase;
 }
 
-.item2 {
+.itemNumber {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+}
+
+.Moonright {
+    width: 40%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Moonbar {
+    width: 30%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Moonbox {
+    width: fit-content;
+    height: 100%;
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.Moonbox:hover {    
+    border-bottom: 3px solid #ffffff73;
+}
+
+.Moonbox01 {
+    width: fit-content;
+    height: 97%;
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #ffffff;
+    cursor: pointer;
+}
+
+.Moonitem2 {
     width: 47%;
+    height: 55%;
+    display: flex;
     color: #FFF;
     font-family: Bellefair;
-    font-size: 150px;
+    font-size: 100px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
-.item3 {
-    width: 47%;
+.Moonitem3 {
+    width: 58%;
+    height: 65%;
     color: #D0D6F9;
     font-family: Barlow;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
-}
-.right {
-    width: 50%;
-    height: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    /* background-color: #ac3939; */
+    border-bottom: 1px solid #383B4B;;
 }
 
-.outerCircle {    
-    width: 48%;
+.distanceTime {
+    width: 38%;
+    height: 30%;
+    display: flex;
+    color: #D0D6F9;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.figures {
+    width: 100%;
     height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 50%;
-    background: #ffffff00;
+    justify-content: space-between;
 }
 
-.outerCircle:hover {    
-    background: #ffffff1a;
-    transition: background 1s ease-in-out;
-}
 
-.innerCircle {   
-    width: 58%;
-    height: 60%;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 274px;
-    background: #FFF;
-    cursor: pointer;
-
-    color: #0B0D17;
-    font-family: Bellefair;
-    font-size: 32px;
+.title {
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 70%;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 2px;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+}
+
+.Data {
+    color: #FFF;
+    font-family: Bellefair;
+    font-size:140%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
