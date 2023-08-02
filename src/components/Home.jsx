@@ -6,14 +6,19 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
     const navigator = useNavigate();
 
-    const handButtonMoon = (e) => {
+    const handButtonDestination = (e) => {
         e.preventDefault();
-        navigator('./moon');
+        navigator('./destination');
     }
 
-    const handButtonMars = (e) => {
+    const handButtonCrew = (e) => {
         e.preventDefault();
-        navigator('./mars');
+        navigator('../crew');
+    }
+
+    const handButtonTechnology = (e) => {
+        e.preventDefault();
+        navigator('../technology');
     }
 
     return (
@@ -23,9 +28,9 @@ const Home = () => {
                 <span className="grayLine"></span>
                 <div className="bar">
                     <div className="box01"><span className="number">00</span> HOME</div>
-                    <div className="box" onClick={handButtonMoon}><span className="number">01</span> DESTINATION</div>
-                    <div className="box" onClick={handButtonMars}><span className="number">02</span> CREW</div>
-                    <div className="box"><span className="number">03</span> TECHNOLOGY</div>
+                    <div className="box" onClick={handButtonDestination}><span className="number">01</span> DESTINATION</div>
+                    <div className="box" onClick={handButtonCrew}><span className="number">02</span> CREW</div>
+                    <div className="box" onClick={handButtonTechnology}><span className="number">03</span> TECHNOLOGY</div>
                 </div>
             </div>
             <div className="bottomWrapper">
@@ -40,7 +45,7 @@ const Home = () => {
                         world experience!</div>
                 </div>
                 <div className="right">
-                    <div className="outerCircle" onClick={handButtonMoon}>
+                    <div className="outerCircle" onClick={handButtonDestination}>
                         <div className="innerCircle">EXPLORE</div>
                     </div>
                 </div>

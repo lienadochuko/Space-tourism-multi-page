@@ -6,15 +6,27 @@ import { Home } from './components';
 import { Moon } from './components';
 import { Mars } from './components';
 import { Europa } from './components';
+import { Titan } from './components';
+import { Commander } from './components';
+import { Specialist } from './components';
+import { Pilot } from './components';
+import { Engineer } from './components';
+import { Vehicle } from './components'
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/moon' element={<Moon/>} />
+        <Route path='/destination' element={<Moon/>} />
         <Route path='/mars' element={<Mars/>} />
         <Route path='/europa' element={<Europa/>} />
+        <Route path='/titan' element={<Titan/>} />
+        <Route path='/crew' element={<Commander/>} />
+        <Route path='/specialist' element={<Specialist/>} />
+        <Route path='/pilot' element={<Pilot/>} />
+        <Route path='/engineer' element={<Engineer/>} />
+        <Route path='/technology' element={<Vehicle/>} />
       </Routes>
     </Router>
   );

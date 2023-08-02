@@ -14,14 +14,33 @@ const Europa = () => {
         navigator('/');
     }
 
-    const handButtonMoon = (e) => {
+    const handButtonDestination = (e) => {
         e.preventDefault();
         navigator('../moon');
+    }
+
+    const handButtonCrew = (e) => {
+        e.preventDefault();
+        navigator('../crew');
+    }
+    const handButtonMoon = (e) => {
+        e.preventDefault();
+        navigator('../destination');
     }
 
     const handButtonMars= (e) => {
         e.preventDefault();
         navigator('../mars');
+    }
+    
+    const handButtonTitan = (e) => {
+        e.preventDefault();
+        navigator('../titan');
+    }
+
+    const handButtonTechnology = (e) => {
+        e.preventDefault();
+        navigator('../technology');
     }
 
     return (
@@ -31,9 +50,9 @@ const Europa = () => {
                 <span className="grayLine"></span>
                 <div className="bar">
                     <div className="box" onClick={handButton}><span className="number">00</span> HOME</div>
-                    <div className="box1" onClick={handButtonMoon}><span className="number">01</span> DESTINATION</div>
-                    <div className="box"><span className="number">02</span> CREW</div>
-                    <div className="box"><span className="number">03</span> TECHNOLOGY</div>
+                    <div className="box1" onClick={handButtonDestination}><span className="number">01</span> DESTINATION</div>
+                    <div className="box" onClick={handButtonCrew}><span className="number">02</span> CREW</div>
+                    <div className="box" onClick={handButtonTechnology}><span className="number">03</span> TECHNOLOGY</div>
                 </div>
             </div>
             <div className="bottomWrapper">
@@ -49,7 +68,7 @@ const Europa = () => {
                         <div className="Moonbox" onClick={handButtonMoon}>{String(data.destinations[0].name).toUpperCase()}</div>
                         <div className="Moonbox" onClick={handButtonMars}>{String(data.destinations[1].name).toUpperCase()}</div>
                         <div className="Moonbox01">{String(data.destinations[2].name).toUpperCase()}</div>
-                        <div className="Moonbox">{String(data.destinations[3].name).toUpperCase()}</div>
+                        <div className="Moonbox" onClick={handButtonTitan}>{String(data.destinations[3].name).toUpperCase()}</div>
                     </div>
                     <div className="Moonitem2">{String(data.destinations[2].name).toUpperCase()}</div>
                     <div className="Moonitem3">{data.destinations[2].description}</div>

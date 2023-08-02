@@ -2,11 +2,11 @@ import React from "react";
 import '../../style/home.css';
 import '../..//style/global.css';
 import logo from '../../assets/shared/logo.svg';
-import mars from '../../assets/destination/image-mars.png';
+import europa from '../../assets/destination/image-titan.png';
 import { useNavigate } from "react-router-dom";
 import data from '../../data.json';
 
-const Mars = () => {
+const Titan = () => {
     const navigator = useNavigate();
 
     const handButton = (e) => {
@@ -16,31 +16,29 @@ const Mars = () => {
 
     const handButtonDestination = (e) => {
         e.preventDefault();
-        navigator('../destination');
+        navigator('../moon');
     }
 
     const handButtonCrew = (e) => {
         e.preventDefault();
         navigator('../crew');
     }
-
     const handButtonMoon = (e) => {
         e.preventDefault();
         navigator('../destination');
     }
 
-    const handButtonEuropa = (e) => {
+    const handButtonMars= (e) => {
+        e.preventDefault();
+        navigator('../mars');
+    }
+
+    const handButtonEuropa= (e) => {
         e.preventDefault();
         navigator('../europa');
     }
 
-    const handButtonTitan = (e) => {
-        e.preventDefault();
-        navigator('../titan');
-    }
-
-    
-     const handButtonTechnology = (e) => {
+    const handButtonTechnology = (e) => {
         e.preventDefault();
         navigator('../technology');
     }
@@ -63,25 +61,25 @@ const Mars = () => {
                         <span className="itemNumber">01</span>
                         <span className="itemInstruction"> PICK YOUR DESTINATION</span>
                     </div>
-                    <img src={mars} alt="moon" className="moonImg" />
+                    <img src={europa} alt="moon" className="moonImg" />
                 </div>
                 <div className="Moonright">
                     <div className="Moonbar">
                         <div className="Moonbox" onClick={handButtonMoon}>{String(data.destinations[0].name).toUpperCase()}</div>
-                        <div className="Moonbox01">{String(data.destinations[1].name).toUpperCase()}</div>
+                        <div className="Moonbox" onClick={handButtonMars}>{String(data.destinations[1].name).toUpperCase()}</div>
                         <div className="Moonbox" onClick={handButtonEuropa}>{String(data.destinations[2].name).toUpperCase()}</div>
-                        <div className="Moonbox" onClick={handButtonTitan}>{String(data.destinations[3].name).toUpperCase()}</div>
+                        <div className="Moonbox01">{String(data.destinations[3].name).toUpperCase()}</div>
                     </div>
-                    <div className="Moonitem2">{String(data.destinations[1].name).toUpperCase()}</div>
-                    <div className="Moonitem3">{data.destinations[1].description}</div>
+                    <div className="Moonitem2">{String(data.destinations[3].name).toUpperCase()}</div>
+                    <div className="Moonitem3">{data.destinations[3].description}</div>
                     <div className="distanceTime">
                         <div className="figures">
                             <div className="title">AVG. DISTANCE</div>
-                            <div className="Data">{String(data.destinations[1].distance).toUpperCase()}</div>
+                            <div className="Data">{String(data.destinations[3].distance).toUpperCase()}</div>
                         </div>
                         <div className="figures">
                             <div className="title">EST. TRAVEL TIME</div>
-                            <div className="Data">{String(data.destinations[1].travel).toUpperCase()}</div>
+                            <div className="Data">{String(data.destinations[3].travel).toUpperCase()}</div>
                         </div>
                     </div>
                 </div>
@@ -90,4 +88,4 @@ const Mars = () => {
     )
 }
 
-export default Mars;
+export default Titan;
