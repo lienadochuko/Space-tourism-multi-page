@@ -51,26 +51,28 @@ const Vehicle = () => {
                 </div>
             </div>
             <div className="bottomWrapper">
-                <div className="Crewright">
-                    <div className="Crewitem1">
-                        <span className="CrewitemNumber">03</span>
-                        <span className="CrewitemInstruction">SPACE LAUNCH 101</span>
+                <div className="Technologyright">
+                    <div className="Technologyitem1">
+                        <span className="TechnologyitemNumber">03</span>
+                        <span className="TechnologyitemInstruction">SPACE LAUNCH 101</span>
                     </div>
-                    <div className="Crewbar">
-                        <div className="Crewbox">THE TERMINOLOGY…</div>
+                    <div className="TechnologyMain">
+                    <div className="TechnologyNavigate">
+                        <span className="Technologycircle1">1</span>
+                        <span className="Technologycircle" onClick={handButtonSpecialist}>2</span>
+                        <span className="Technologycircle">3</span>
+                    </div>
+                    <div className="Technologybar">
+                        <div className="Technologybox">THE TERMINOLOGY…</div>
 
-                        <div className="Crewitem2">{String(data.technology[0].name).toUpperCase()}</div>
-                        <div className="Crewitem3">{data.technology[0].description}</div>
+                        <div className="Technologyitem2">{String(data.technology[0].name).toUpperCase()}</div>
+                        <div className="Technologyitem3">{data.technology[0].description}</div>
                     </div>
-                    <div className="CrewNavigate">
-                        <span className="Crewcircle"></span>
-                        <span className="Crewcircle" onClick={handButtonSpecialist}></span>
-                        <span className="Crewcircle"></span>
-                        <span className="Crewcircle1"></span>
                     </div>
+                   
                 </div>
-                <div className="Crewleft">
-                    <img src={launch} alt="moon" className="moonImg" />
+                <div className="Technologyleft">
+                    <img src={launch} alt="moon" className="TechnologyImg" />
                 </div>
             </div>
         </div>

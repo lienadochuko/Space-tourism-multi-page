@@ -364,3 +364,129 @@
     border-bottom: 3px solid #ffffff;
     cursor: pointer;
 }
+
+.Technologyright {
+    width: 60%;
+    padding-left: 10%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.Technologyitem1 {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.TechnologyitemNumber {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+}
+
+.TechnologyitemInstruction {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+}
+
+.TechnologyMain {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Technologybar {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Technologybox {
+    width: fit-content;
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.5042492151260376;
+}
+
+.Technologyitem2 {
+    width: fit-content;
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.Technologyitem3 {
+    width: 76%;
+    height: fit-content;
+    color: #D0D6F9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.TechnologyNavigate {
+    width: 20%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Technologycircle1 {
+    width: 35%;
+    height: 15%;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+
+
+.Technologycircle {
+    width: 35%;
+    height: 15%;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+
+.Technologyleft {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: #006633dc;
+}
+
+.TechnologyImg {
+    width: 75%;
+    height: 75%;
+}
