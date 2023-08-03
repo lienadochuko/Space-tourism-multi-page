@@ -104,6 +104,17 @@
 
 }
 
+.itemH1 {
+    width: 55%;
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+}
+
 .item1 {
     width: 47%;
     color: #D0D6F9;
@@ -116,7 +127,7 @@
 }
 
 .item2 {
-    width: 47%;
+    width: 55%;
     color: #FFF;
     font-family: Bellefair;
     font-size: 150px;
@@ -126,7 +137,7 @@
 }
 
 .item3 {
-    width: 47%;
+    width: 55%;
     color: #D0D6F9;
     font-family: Barlow;
     font-size: 18px;

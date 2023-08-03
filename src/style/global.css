@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Roboto:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Bellefair&family=Roboto:wght@500;700&display=swap');
 
+
+/* Destination css */
+
 .contain1 {
     width: 100%;
     height: 100vh;
@@ -22,7 +25,6 @@
 }
 
 
-/* Destination css */
 
 .Moonleft {
     width: 60%;
@@ -189,6 +191,19 @@
 }
 
 /* Crew css */
+
+
+.contain2 {
+    width: 100%;
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    background-image: url('../assets/crew/background-crew-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .boxCrew1 {
     width: 8%;
     height: 97%;
@@ -214,7 +229,7 @@
 }
 
 .Crewitem1 {
-    width: 38%;
+    width: 45%;
     display: flex;
     justify-content: space-between;
 }
@@ -230,8 +245,19 @@
     opacity: 0.25;
 }
 
+.CrewitemInstruction {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+}
+
 .Crewbar {
-    height: 35%;
+    height: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -305,13 +331,36 @@
     color: #006633dc;
 }
 
-.CrewitemInstruction {
-    color: #FFF;
+
+.CrewImg {
+    height: 90%;
+    width: 65%;
+}
+
+/* technology */
+
+
+.contain3 {
+    width: 100%;
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    background-image: url('../assets/technology/background-technology-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boxtechnology1 {
+    width: fit-content;
+    height: 97%;
     font-family: Barlow Condensed;
-    font-size: 28px;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 4.725px;
-    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #ffffff;
+    cursor: pointer;
 }

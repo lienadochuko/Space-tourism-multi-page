@@ -35,7 +35,7 @@ const Home = () => {
             </div>
             <div className="bottomWrapper">
                 <div className="left">
-                    <div className="item1">SO, YOU WANT TO TRAVEL TO</div>
+                    <div className="itemH1">SO, YOU WANT TO TRAVEL TO</div>
                     <div className="item2">SPACE</div>
                     <div className="item3">
                         Let’s face it; if you want to go to space

@@ -14,7 +14,7 @@ const Commander = () => {
         navigator('/');
     }
 
-    
+
     const handButtonDestination = (e) => {
         e.preventDefault();
         navigator('../destination');
@@ -29,7 +29,7 @@ const Commander = () => {
         e.preventDefault();
         navigator('../pilot');
     }
-    
+
     const handButtonEngineer = (e) => {
         e.preventDefault();
         navigator('../engineer');
@@ -41,7 +41,7 @@ const Commander = () => {
     }
 
     return (
-        <div className="contain1">
+        <div className="contain2">
             <div className="wrapper">
                 <img src={logo} alt="logo" className="logo" />
                 <span className="grayLine"></span>
@@ -54,25 +54,25 @@ const Commander = () => {
             </div>
             <div className="bottomWrapper">
                 <div className="Crewright">
-                <div className="Crewitem1">
+                    <div className="Crewitem1">
                         <span className="CrewitemNumber">02</span>
                         <span className="CrewitemInstruction">MEET YOUR CREW</span>
-                </div>
+                    </div>
                     <div className="Crewbar">
                         <div className="Crewbox">{String(data.crew[0].role).toUpperCase()}</div>
-                    
-                    <div className="Crewitem2">{String(data.crew[0].name).toUpperCase()}</div>
-                    <div className="Crewitem3">{data.crew[0].bio}</div>  
-                </div>  
-                <div className="CrewNavigate">
-                    <span className="Crewcircle1"></span>
-                    <span className="Crewcircle" onClick={handButtonSpecialist}></span>
-                    <span className="Crewcircle" onClick={handButtonPilot}></span>
-                    <span className="Crewcircle" onClick={handButtonEngineer}></span>
-                </div>                
+
+                        <div className="Crewitem2">{String(data.crew[0].name).toUpperCase()}</div>
+                        <div className="Crewitem3">{data.crew[0].bio}</div>
+                    </div>
+                    <div className="CrewNavigate">
+                        <span className="Crewcircle1"></span>
+                        <span className="Crewcircle" onClick={handButtonSpecialist}></span>
+                        <span className="Crewcircle" onClick={handButtonPilot}></span>
+                        <span className="Crewcircle" onClick={handButtonEngineer}></span>
+                    </div>
                 </div>
-                <div className="Crewleft">                    
-                    <img src={douglas} alt="moon" className="moonImg" />
+                <div className="Crewleft">
+                    <img src={douglas} alt="moon" className="CrewImg" />
                 </div>
             </div>
         </div>

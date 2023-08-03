@@ -43,7 +43,7 @@ const Engineer = () => {
     }
 
     return (
-        <div className="contain1">
+        <div className="contain2">
             <div className="wrapper">
                 <img src={logo} alt="logo" className="logo" />
                 <span className="grayLine"></span>
@@ -74,7 +74,7 @@ const Engineer = () => {
                     </div>
                 </div>
                 <div className="Crewleft">
-                    <img src={anousheh} alt="moon" className="moonImg" />
+                    <img src={anousheh} alt="moon" className="CrewImg" />
                 </div>
             </div>
         </div>

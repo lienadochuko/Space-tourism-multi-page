@@ -42,7 +42,7 @@ const Specialist = () => {
         navigator('../technology');
     }
     return (
-        <div className="contain1">
+        <div className="contain2">
             <div className="wrapper">
                 <img src={logo} alt="logo" className="logo" />
                 <span className="grayLine"></span>
@@ -73,7 +73,7 @@ const Specialist = () => {
                 </div>                
                 </div>
                 <div className="Crewleft">                    
-                    <img src={shuttleworth} alt="moon" className="moonImg" />
+                    <img src={shuttleworth} alt="moon" className="CrewImg" />
                 </div>
             </div>
         </div>
