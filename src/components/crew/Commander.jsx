@@ -48,7 +48,7 @@ const Commander = () => {
                 <div className="bar">
                     <div className="box" onClick={handButton}><span className="number">00</span> HOME</div>
                     <div className="box" onClick={handButtonDestination}><span className="number">01</span> DESTINATION</div>
-                    <div className="box1" ><span className="number">02</span> CREW</div>
+                    <div className="boxCrew1" ><span className="number">02</span> CREW</div>
                     <div className="box" onClick={handButtonTechnology}><span className="number">03</span> TECHNOLOGY</div>
                 </div>
             </div>

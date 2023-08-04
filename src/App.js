@@ -11,7 +11,9 @@ import { Commander } from './components';
 import { Specialist } from './components';
 import { Pilot } from './components';
 import { Engineer } from './components';
-import { Vehicle } from './components'
+import { Vehicle } from './components';
+import { SpaceCapsule } from './components';
+import { Spaceport } from './components';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path='/pilot' element={<Pilot/>} />
         <Route path='/engineer' element={<Engineer/>} />
         <Route path='/technology' element={<Vehicle/>} />
+        <Route path='/spaceport' element={<Spaceport/>} />
+        <Route path='/spaceCapsule' element={<SpaceCapsule/>} />
       </Routes>
     </Router>
   );

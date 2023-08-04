@@ -8,3 +8,5 @@ export { default as Specialist } from './crew/Specialist';
 export {default as Pilot } from './crew/Pilot';
 export { default as Engineer } from './crew/Engineer';
 export { default as Vehicle } from './Technology/Vehicle';
+export { default as Spaceport } from './Technology/Spaceport';
+export { default as SpaceCapsule } from './Technology/SpaceCapsule'

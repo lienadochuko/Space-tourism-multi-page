@@ -2,11 +2,11 @@ import React from "react";
 import '../../style/home.css';
 import '../..//style/global.css';
 import logo from '../../assets/shared/logo.svg';
-import launch from '../../assets/technology/image-launch-vehicle-portrait.jpg';
+import Spacecapsule from '../../assets/technology/image-space-capsule-portrait.jpg';
 import { useNavigate } from "react-router-dom";
 import data from '../../data.json';
 
-const Vehicle = () => {
+const SpaceCapsule = () => {
     const navigator = useNavigate();
 
     const handButton = (e) => {
@@ -28,15 +28,15 @@ const Vehicle = () => {
         navigator('../spaceport');
     }
 
-    const handButtonSpaceCapsule = (e) => {
-        e.preventDefault();
-        navigator('../spaceCapsule');
-    }
-
     const handButtonTechnology = (e) => {
         e.preventDefault();
         navigator('../technology');
     }
+
+    // const handButtonVehicle = (e) => {
+    //     e.preventDefault();
+    //     navigator('../vehicle');
+    // }
 
     return (
         <div className="contain3">
@@ -58,25 +58,25 @@ const Vehicle = () => {
                     </div>
                     <div className="TechnologyMain">
                     <div className="TechnologyNavigate">
-                        <span className="Technologycircle1">1</span>
+                        <span className="Technologycircle" onClick={handButtonTechnology}>1</span>
                         <span className="Technologycircle" onClick={handButtonSpaceport}>2</span>
-                        <span className="Technologycircle" onClick={handButtonSpaceCapsule}>3</span>
+                        <span className="Technologycircle1">3</span>
                     </div>
                     <div className="Technologybar">
                         <div className="Technologybox">THE TERMINOLOGY…</div>
 
-                        <div className="Technologyitem2">{String(data.technology[0].name).toUpperCase()}</div>
-                        <div className="Technologyitem3">{data.technology[0].description}</div>
+                        <div className="Technologyitem2">{String(data.technology[2].name).toUpperCase()}</div>
+                        <div className="Technologyitem3">{data.technology[2].description}</div>
                     </div>
                     </div>
                    
                 </div>
                 <div className="Technologyleft">
-                    <img src={launch} alt="moon" className="TechnologyImg" />
+                    <img src={Spacecapsule} alt="Spacecapsule" className="TechnologyImg" />
                 </div>
             </div>
         </div>
     )
 }
 
-export default Vehicle;
+export default SpaceCapsule;
