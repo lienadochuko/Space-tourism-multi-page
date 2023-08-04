@@ -413,26 +413,18 @@
 
 .Technologybar {
     width: 89%;
-    height: 100%;
+    height: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-}
-
-.Technologybox {
-    width: fit-content;
-    color: #D0D6F9;
-    font-family: Barlow Condensed;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    opacity: 0.5042492151260376;
+    justify-content: space-between;
 }
 
 .Technologyitem2 {
+    height: 40%;
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: #FFF;
     font-family: Bellefair;
     font-size: 56px;
@@ -442,8 +434,22 @@
     text-transform: uppercase;
 }
 
+.Technologybox {
+    width: fit-content;
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: normal; */
+    text-transform: uppercase;
+    opacity: 0.5042492151260376;
+}
+
+
+
 .Technologyitem3 {
-    width: 76%;
+    width: 70%;
     height: fit-content;
     color: #D0D6F9;
     font-family: Barlow;

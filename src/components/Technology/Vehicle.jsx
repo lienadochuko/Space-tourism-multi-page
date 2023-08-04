@@ -63,9 +63,9 @@ const Vehicle = () => {
                         <span className="Technologycircle" onClick={handButtonSpaceCapsule}>3</span>
                     </div>
                     <div className="Technologybar">
+                        <div className="Technologyitem2">
                         <div className="Technologybox">THE TERMINOLOGY…</div>
-
-                        <div className="Technologyitem2">{String(data.technology[0].name).toUpperCase()}</div>
+                            {String(data.technology[0].name).toUpperCase()}</div>
                         <div className="Technologyitem3">{data.technology[0].description}</div>
                     </div>
                     </div>

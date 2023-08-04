@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import '../style/home.css';
 import logo from '../assets/shared/logo.svg';
+import iconhamburger from '../assets/shared/icon-hamburger.svg';
+import iconcloser from '../assets/shared/icon-close.svg';
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
     const navigator = useNavigate();
+    const [hamburger, setHamburger] = useState(false);
+
+    const open = () => {
+        setHamburger(!hamburger);
+    }
 
     const handButtonDestination = (e) => {
         e.preventDefault();
@@ -23,8 +30,8 @@ const Home = () => {
 
     return (
         <div className="contain">
-            <div className="wrapper">
-                <img src={logo} alt="logo" className="logo"/>
+            <div className="Homewrapper">
+                <img src={logo} alt="logo" className="Homelogo"/>
                 <span className="grayLine"></span>
                 <div className="bar">
                     <div className="box01"><span className="number">00</span> HOME</div>
@@ -32,6 +39,23 @@ const Home = () => {
                     <div className="box" onClick={handButtonCrew}><span className="number">02</span> CREW</div>
                     <div className="box" onClick={handButtonTechnology}><span className="number">03</span> TECHNOLOGY</div>
                 </div>
+                <img src={iconhamburger} alt="harmburgerIcon" className="hamburger" onClick={open}/>
+                 {
+                    hamburger ?  
+                <div className="bar">
+                    <div className="box01"><span className="number">00</span> HOME</div>
+                    <div className="box" onClick={handButtonDestination}><span className="number">01</span> DESTINATION</div>
+                    <div className="box" onClick={handButtonCrew}><span className="number">02</span> CREW</div>
+                    <div className="box" onClick={handButtonTechnology}><span className="number">03</span> TECHNOLOGY</div>
+                </div>
+                    :<div className="bar1"> 
+                    <img src={iconcloser} alt="closeIcon"/>
+                    <div className="box01"><span className="number">00</span> HOME</div>
+                    <div className="box" onClick={handButtonDestination}><span className="number">01</span> DESTINATION</div>
+                    <div className="box" onClick={handButtonCrew}><span className="number">02</span> CREW</div>
+                    <div className="box" onClick={handButtonTechnology}><span className="number">03</span> TECHNOLOGY</div>
+                </div>
+                    }  
             </div>
             <div className="bottomWrapper">
                 <div className="left">
