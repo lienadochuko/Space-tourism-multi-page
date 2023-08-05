@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-// import '../../style/home.css';
-import '../..//style/global.css';
+import '../../style/home.css';
+import '../../style/global.css';
 import logo from '../../assets/shared/logo.svg';
 import moon from '../../assets/destination/image-moon.png';
 import iconhamburger from '../../assets/shared/icon-hamburger.svg';
