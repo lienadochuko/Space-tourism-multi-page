@@ -11,6 +11,7 @@ const Home = () => {
 
     const open = () => {
         setHamburger(!hamburger);
+        console.log(hamburger);
     }
 
     const handButtonDestination = (e) => {
@@ -39,25 +40,18 @@ const Home = () => {
                     <div className="box" onClick={handButtonCrew}><span className="number">02</span> CREW</div>
                     <div className="box" onClick={handButtonTechnology}><span className="number">03</span> TECHNOLOGY</div>
                 </div>
-                <img src={iconhamburger} alt="harmburgerIcon" className="hamburger" onClick={open}/>
-                 {
-                    hamburger ?  
-                <div className="bar">
+                <img src={iconhamburger} alt="harmburgerIcon" className="hamburger" onClick={open}/>              
+                <div className="bar1" style={{display: hamburger ? 'flex' : 'none'}}> 
+                    <img src={iconcloser} alt="closeIcon" className="closer" onClick={open}/>
+                    <div className="boxhold">
                     <div className="box01"><span className="number">00</span> HOME</div>
                     <div className="box" onClick={handButtonDestination}><span className="number">01</span> DESTINATION</div>
                     <div className="box" onClick={handButtonCrew}><span className="number">02</span> CREW</div>
                     <div className="box" onClick={handButtonTechnology}><span className="number">03</span> TECHNOLOGY</div>
+                    </div>
                 </div>
-                    :<div className="bar1"> 
-                    <img src={iconcloser} alt="closeIcon"/>
-                    <div className="box01"><span className="number">00</span> HOME</div>
-                    <div className="box" onClick={handButtonDestination}><span className="number">01</span> DESTINATION</div>
-                    <div className="box" onClick={handButtonCrew}><span className="number">02</span> CREW</div>
-                    <div className="box" onClick={handButtonTechnology}><span className="number">03</span> TECHNOLOGY</div>
-                </div>
-                    }  
             </div>
-            <div className="bottomWrapper">
+            <div className="HomebottomWrapper">
                 <div className="left">
                     <div className="itemH1">SO, YOU WANT TO TRAVEL TO</div>
                     <div className="item2">SPACE</div>

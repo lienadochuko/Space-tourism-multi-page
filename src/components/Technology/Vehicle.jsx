@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import '../../style/home.css';
 import '../..//style/global.css';
 import logo from '../../assets/shared/logo.svg';
 import launch from '../../assets/technology/image-launch-vehicle-portrait.jpg';
+import launchlandscape from '../../assets/technology/image-launch-vehicle-landscape.jpg';
+import iconhamburger from '../../assets/shared/icon-hamburger.svg';
+import iconcloser from '../../assets/shared/icon-close.svg';
 import { useNavigate } from "react-router-dom";
 import data from '../../data.json';
 
 const Vehicle = () => {
     const navigator = useNavigate();
+    const [hamburger, setHamburger] = useState(false);
+
+    const open = () => {
+        setHamburger(!hamburger);
+        console.log(hamburger);
+    }
 
     const handButton = (e) => {
         e.preventDefault();
@@ -49,27 +58,45 @@ const Vehicle = () => {
                     <div className="box" onClick={handButtonCrew} ><span className="number">02</span> CREW</div>
                     <div className="boxtechnology1" onClick={handButtonTechnology}><span className="number">03</span> TECHNOLOGY</div>
                 </div>
+                <img src={iconhamburger} alt="harmburgerIcon" className="hamburger" onClick={open} />
+                <div className="bar1" style={{ display: hamburger ? 'flex' : 'none' }}>
+                    <img src={iconcloser} alt="closeIcon" className="closer" onClick={open} />
+                    <div className="boxhold">
+                        <div className="box" onClick={handButton}><span className="number">00</span> HOME</div>
+                        <div className="box" onClick={handButtonDestination}><span className="number">01</span> DESTINATION</div>
+                        <div className="box"><span className="number">02</span> CREW</div>
+                        <div className="box1" onClick={handButtonTechnology}><span className="number">03</span> TECHNOLOGY</div>
+                    </div>
+                </div>
             </div>
             <div className="bottomWrapper">
+                <div className="Technologyitem4">
+                    <span className="TechnologyitemNumber">03</span>
+                    <span className="TechnologyitemInstruction">SPACE LAUNCH 101</span>
+                </div>
+                <div className="Technologyleft1">
+                    <img src={launchlandscape} alt="techrocket" className="TechnologyImg" />
+                </div>
                 <div className="Technologyright">
                     <div className="Technologyitem1">
                         <span className="TechnologyitemNumber">03</span>
                         <span className="TechnologyitemInstruction">SPACE LAUNCH 101</span>
                     </div>
                     <div className="TechnologyMain">
-                    <div className="TechnologyNavigate">
-                        <span className="Technologycircle1">1</span>
-                        <span className="Technologycircle" onClick={handButtonSpaceport}>2</span>
-                        <span className="Technologycircle" onClick={handButtonSpaceCapsule}>3</span>
+                        <div className="TechnologyNavigate">
+                            <span className="Technologycircle1">1</span>
+                            <span className="Technologycircle" onClick={handButtonSpaceport}>2</span>
+                            <span className="Technologycircle" onClick={handButtonSpaceCapsule}>3</span>
+                        </div>
+                        <div className="Technologybar">
+                            <div className="Technologyitem2">
+                                <div className="Technologybox">THE TERMINOLOGY…</div>
+                                {String(data.technology[0].name).toUpperCase()}
+                            </div>
+                            <div className="Technologyitem3">{data.technology[0].description}</div>
+                        </div>
                     </div>
-                    <div className="Technologybar">
-                        <div className="Technologyitem2">
-                        <div className="Technologybox">THE TERMINOLOGY…</div>
-                            {String(data.technology[0].name).toUpperCase()}</div>
-                        <div className="Technologyitem3">{data.technology[0].description}</div>
-                    </div>
-                    </div>
-                   
+
                 </div>
                 <div className="Technologyleft">
                     <img src={launch} alt="moon" className="TechnologyImg" />

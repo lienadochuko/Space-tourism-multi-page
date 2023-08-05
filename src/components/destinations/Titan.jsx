@@ -1,13 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import '../../style/home.css';
 import '../..//style/global.css';
 import logo from '../../assets/shared/logo.svg';
 import europa from '../../assets/destination/image-titan.png';
+import iconhamburger from '../../assets/shared/icon-hamburger.svg';
+import iconcloser from '../../assets/shared/icon-close.svg';
 import { useNavigate } from "react-router-dom";
 import data from '../../data.json';
 
 const Titan = () => {
     const navigator = useNavigate();
+    const [hamburger, setHamburger] = useState(false);
+
+    const open = () => {
+        setHamburger(!hamburger);
+        console.log(hamburger);
+    }
 
     const handButton = (e) => {
         e.preventDefault();
@@ -53,6 +61,16 @@ const Titan = () => {
                     <div className="box1" onClick={handButtonDestination}><span className="number">01</span> DESTINATION</div>
                     <div className="box" onClick={handButtonCrew}><span className="number">02</span> CREW</div>
                     <div className="box" onClick={handButtonTechnology}><span className="number">03</span> TECHNOLOGY</div>
+                </div>
+                <img src={iconhamburger} alt="harmburgerIcon" className="hamburger" onClick={open}/>              
+                <div className="bar1" style={{display: hamburger ? 'flex' : 'none'}}> 
+                    <img src={iconcloser} alt="closeIcon" className="closer" onClick={open}/>
+                    <div className="boxhold">
+                    <div className="box" onClick={handButton}><span className="number">00</span> HOME</div>
+                    <div className="box1" onClick={handButtonDestination}><span className="number">01</span> DESTINATION</div>
+                    <div className="box" onClick={handButtonCrew}><span className="number">02</span> CREW</div>
+                    <div className="box" onClick={handButtonTechnology}><span className="number">03</span> TECHNOLOGY</div>
+                    </div>
                 </div>
             </div>
             <div className="bottomWrapper">

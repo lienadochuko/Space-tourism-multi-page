@@ -4,7 +4,9 @@
 
 
 /* Destination css */
-
+body{
+    background-color: #D0D6F9;
+}
 .contain1 {
     width: 100%;
     height: 100vh;
@@ -190,6 +192,313 @@
     line-height: normal;
 }
 
+
+.bar1 {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+@media only screen and (max-width:1000px) {
+    .contain1 {
+        width: 100%;
+        height: 100vh;
+        /* display: flex; */
+        /* justify-content: center; */
+        background-image: url('../assets/destination/background-destination-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .wrapper {
+        width: 95%;
+        height: 8%;
+        display: flex;
+        margin-left: 5%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .Homelogo {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-self: center;
+    }
+
+    .grayLine {
+        display: none;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .bar {
+        width: 65%;
+        height: 100%;
+    }
+
+    .box1 {
+        width: fit-content;
+    }
+
+    .bottomWrapper {
+        width: 95%;
+        height: 90%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Moonleft {
+        width: 100%;
+        height: 48%;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10%;
+    }
+
+    .item1 {
+        width: 100%;
+        text-align: left;
+        padding-left: 10%;
+    }
+
+    .item2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .item3 {
+        width: 55%;
+        text-align: center;
+    }
+
+    .Moonright {
+        width: 100%;
+        height: 40%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Moonbar {
+        height: 8%;
+        margin: 0px;
+
+    }
+
+    .Moonitem2 {
+        width: 100%;
+        height: 30%;
+        font-size: 100px;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+    
+    .Moonitem3 {
+        width: 70%;
+        height: fit-content;
+        padding-bottom: 0%;
+        text-align: center;
+        border: none;
+        margin: 0px;
+    }
+    
+    .distanceTime {
+        width: 100%;
+        height: 20%;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .figures {
+        width: 35%;
+        height: 50%;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2%;
+        border-top: 1px solid gray;
+        margin: 0px;
+    }
+
+}
+
+@media only screen and (max-width:580px) {
+    .contain1 {
+        width: 100%;
+        height: 100vh;
+        background-image: url('../assets/destination/background-destination-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #D0D6F9;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 8%;
+        margin: 0%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        padding-left: 5%;
+    }
+
+    .hamburger {
+        display: flex;
+        z-index: 9999;
+        padding-right: 10%;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .bar1 {
+        width: 70%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 9999;
+        justify-content: flex-start;
+        background-color: #9797972c;
+        backdrop-filter: blur(40.774227142333984px);
+    }
+
+    .boxhold {
+        width: 100%;
+        height: 40%;
+        padding-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .number {
+        display: flex;
+    }
+
+    .closer {
+        width: 20px;
+        height: 20px;
+        margin-top: 30px;
+        margin-right: 20px;
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .box {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .box1 {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .bottomWrapper {
+        width: 95%;
+        height: 92%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+
+    .Moonleft {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .moonImg {
+        width: 250px;
+        height: 250px;
+    }
+
+    .item1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .itemNumber {
+        font-size: 16px;
+    }
+
+    .itemInstruction {
+        font-size: 16px;
+        margin-left: 1%;
+    }
+
+    .Moonright {
+        width: 100%;
+        height: 40%;
+        justify-content: space-between;
+    }
+
+   .Moonbox01 {
+    font-size: 13px;
+   }
+   .Moonbox {
+    font-size: 13px;
+   }
+
+   .Moonbar {
+    width: 45%;
+   }
+
+   .Moonitem2 { 
+    font-size: 70px;
+    margin: 0%;
+    padding: 0%;
+   }
+
+   .Moonitem3 { 
+    height: fit-content;  
+    font-size: 13px;
+    line-height: normal;
+    margin: 0%;
+    padding: 0%;
+   }
+
+   .distanceTime {
+    width: 80%;
+    height: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+   }
+
+   .figures {
+    border: none;
+    width: 50%;
+    height: 30%;
+   }
+
+}
+
 /* Crew css */
 
 
@@ -317,7 +626,7 @@
     height: 10%;
     border-radius: 50%;
     background-color: #ffffff;
-    opacity:0.174363
+    opacity: 0.174363
 }
 
 
@@ -328,7 +637,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    color: #006633dc;
+}
+
+.Crewleft2 {
+    display: none;
+}
+
+.CrewNavigate2 {
+    display: none;
 }
 
 
@@ -336,6 +652,303 @@
     height: 90%;
     width: 65%;
 }
+
+@media only screen and (max-width:1000px) {
+    .contain2 {
+        width: 100%;
+        height: 100vh;
+        /* display: flex; */
+        /* justify-content: center; */
+        background-image: url('../assets/crew/background-crew-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .wrapper {
+        width: 95%;
+        height: 8%;
+        display: flex;
+        margin-left: 5%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .Homelogo {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-self: center;
+    }
+
+    .grayLine {
+        display: none;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .bar {
+        width: 65%;
+        height: 100%;
+    }
+
+    .box1 {
+        width: fit-content;
+    }
+
+    .bottomWrapper {
+        width: 95%;
+        height: 92%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Crewright {
+        width: 100%;
+        height: 45%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Crewitem1 {
+        width: 100%;
+        text-align: left;
+        padding-left: 10%;
+        padding-top: 5%;
+        justify-content: flex-start;
+    }
+
+    .CrewitemInstruction {
+        margin-left: 1%;
+    }
+
+    .Crewbar {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .Crewitem2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Crewitem3 {
+        width: 55%;
+        text-align: center;
+    }
+
+
+    .Crewleft {
+        width: 100%;
+        height: 48%;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10%;
+    }
+
+    .CrewNavigate {        
+        width: 20%;
+        height: 25%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Crewleft {
+        width: 100%;
+        height: 55%;
+        padding: 0%;
+    }
+
+    .CrewImg {
+        height: 100%;
+    }
+
+    .Crewbar1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .contain2 {
+        width: 100%;
+        height: 100vh;
+        background-image: url('../assets/crew/background-crew-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #D0D6F9;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 8%;
+        margin: 0%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        padding-left: 5%;
+    }
+
+    .hamburger {
+        display: flex;
+        z-index: 9999;
+        padding-right: 10%;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .bar1 {
+        width: 70%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 9999;
+        justify-content: flex-start;
+        background-color: #9797972c;
+        backdrop-filter: blur(40.774227142333984px);
+    }
+
+    .boxhold {
+        width: 100%;
+        height: 40%;
+        padding-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .number {
+        display: flex;
+    }
+
+    .closer {
+        width: 20px;
+        height: 20px;
+        margin-top: 30px;
+        margin-right: 20px;
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .box {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .box1 {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .bottomWrapper {
+        width: 95%;
+        height: 92%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .Crewright {
+        height: 10%;
+    }
+
+    .Crewitem1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .CrewitemNumber {
+        font-size: 13px;
+    }
+
+    .CrewitemInstruction {
+        font-size: 13px;
+    }
+
+    .CrewNavigate {
+        display: none;
+    } 
+    
+    .Crewleft {
+        width: 80%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        border-bottom: 1px solid gray;
+    }
+
+    .CrewImg {
+        width: 60%;
+    }
+    
+    .Crewbar {
+        display: none;
+    }
+    
+    .CrewNavigate2 {
+        width: 25%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .Crewcircle {
+        width: 10%;
+        height: 15%;
+    }
+
+    .Crewcircle1 {
+        width: 10%;
+        height: 15%;
+    }
+
+    .Crewbar1 {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Crewbox {
+        font-size: 16px;
+    }
+
+    .Crewitem2 {
+        font-size: 24px;
+    }
+
+    .Crewitem3 {
+        width: 80%;
+        font-size: 15px;
+    }
+
+}
+
 
 /* technology */
 
@@ -505,10 +1118,10 @@
     letter-spacing: 2px;
 }
 
-    .Technologycircle:hover {
-        background-color: #fff;
-        color: #000;    
-    }
+.Technologycircle:hover {
+    background-color: #fff;
+    color: #000;
+}
 
 .Technologyleft {
     width: 40%;
@@ -523,4 +1136,144 @@
 .TechnologyImg {
     width: 75%;
     height: 75%;
+}
+
+@media only screen and (max-width:1000px) {
+    .contain3 {
+        background-image: url('../assets/technology/background-technology-tablet.jpg');
+    }
+
+    .bar {
+        width: 65%;
+        height: 100%;
+    }
+
+    .boxtechnology1 {
+        width: fit-content;
+    }
+
+    .Technologyleft1 {
+        width: 100%;
+        height: 35%;  
+    }
+
+    .TechnologyImg {
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        margin-top: 5%;        
+    }
+
+    .Technologyleft {
+        display: none;
+    }
+
+    .Technologyitem4 {
+        width: 40%;
+        height: 6%;
+        display: flex;
+        flex-direction: row;
+        padding-left: 5%;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .TechnologyitemInstruction {
+        margin-left: 3%;
+    }
+
+    .Technologyitem1 {
+        display: none;
+    }
+
+    .Technologyright {
+        width: 100%;
+        height: 45%;
+        align-items: center;
+        justify-content: center;
+        padding: 0%;
+    }
+
+    .Technologyleft {
+        display: none;
+    }
+
+    .TechnologyMain {
+        flex-direction: column;
+    }
+
+    .TechnologyNavigate {
+        width: 40%;
+        height: 30%;
+        align-self: center;
+        flex-direction: row;
+    }
+
+    .Technologycircle1 {
+        width: 25%;
+        height: 70%;
+    }
+
+    .Technologycircle {
+        width: 25%;
+        height: 70%;
+    }
+
+    .Technologybar{
+        width: 100%;
+    }
+
+    .Technologyitem2 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Technologyitem3 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .contain3 {
+        background-image: url('../assets/technology/background-technology-tablet.jpg');
+    }
+
+    .Technologyitem4 {
+        width: 100%;
+        height: 6%;
+    }
+
+    .TechnologyitemNumber {
+        font-size: 14px;
+    }
+
+    .TechnologyitemInstruction {
+        font-size: 15px;
+    }
+
+    .Technologycircle1{
+        font-size: 15px;
+    }
+    
+    .Technologycircle{
+        font-size: 15px;
+    }
+    .Technologyitem2{
+        font-size: 24px;
+    }
+
+    .Technologybox {
+        font-size: 14px;
+        margin-bottom: 2%;
+    }
+
+    .Technologyitem3 {
+        font-size: 15px;
+        margin-top: 5%;
+    }
 }
