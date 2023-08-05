@@ -29,8 +29,11 @@ Users should be able to:
 - View each page and be able to toggle between the tabs to see new information
 
 ### Screenshot
+![screencapture-space-tourism-multi-page-ten-vercel-app-2023-08-05-21_43_29](https://github.com/lienadochuko/Space-tourism-multi-page/assets/66309753/3593ca10-ab22-424e-9c28-1695ef2dfcde)
+![screencapture-space-tourism-multi-page-ten-vercel-app-destination-2023-08-05-21_43_46](https://github.com/lienadochuko/Space-tourism-multi-page/assets/66309753/153872fa-0fb6-4eda-9c8e-f5cd28394113)
+![screencapture-space-tourism-multi-page-ten-vercel-app-crew-2023-08-05-21_43_55](https://github.com/lienadochuko/Space-tourism-multi-page/assets/66309753/8ceafe32-890b-4a62-ae2a-1b333af2dd62)
+![screencapture-space-tourism-multi-page-ten-vercel-app-technology-2023-08-05-21_44_06](https://github.com/lienadochuko/Space-tourism-multi-page/assets/66309753/8c100f10-cb2a-4825-ae2b-d7f0e74e7660)
 
-![](./screenshot.jpg)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
